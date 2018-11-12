@@ -1,7 +1,7 @@
 {
-  "name": "language-clojure",
-  "version": "0.22.7",
-  "description": "Clojure language support in Atom",
+  "name": "language-clojure2",
+  "version": "0.55.999",
+  "description": "Clojure language support in Atom ZZZZZ",
   "engines": {
     "atom": "*",
     "node": "*"
@@ -14,6 +14,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/atom/language-clojure/issues"
+  },
+  "dependencies": {
+    "tree-sitter-clojure": "file:~/tree-sitter-clojure"
   },
   "devDependencies": {
     "coffeelint": "^1.10.1"

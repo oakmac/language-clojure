@@ -1,0 +1,33 @@
+name: 'Clojure'
+scopeName: 'clojure'
+type: 'tree-sitter'
+parser: 'tree-sitter-clojure'
+
+fileTypes: [
+  'boot'
+  'clj'
+  'clj.hl'
+  'cljc'
+  'cljs'
+  'cljs.hl'
+  'cljx'
+  'clojure'
+  'edn'
+  'org'
+  'joke'
+  'joker'
+]
+
+## TODO: should we have a firstLineRegex or contentRegex ?
+firstLineRegex: '^\\(ns'
+contentRegex: '^\\(def'
+
+comments:
+  start: ';'
+
+folds: []
+
+scopes:
+  'nil': 'constant.language.nil.clojure'
+  'boolean > true, boolean > false': 'constant.language.boolean.clojure'
+  'comment': 'comment.clojure'
