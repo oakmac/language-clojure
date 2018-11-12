@@ -18,7 +18,7 @@ fileTypes: [
   'joker'
 ]
 
-## TODO: should we have a firstLineRegex or contentRegex ?
+## TODO: these should be smarter
 firstLineRegex: '^\\(ns'
 contentRegex: '^\\(def'
 
@@ -31,3 +31,14 @@ scopes:
   'nil': 'constant.language.nil.clojure'
   'boolean > true, boolean > false': 'constant.language.boolean.clojure'
   'comment': 'comment.clojure'
+  'number': 'constant.numeric.clojure'
+
+  'keyword': 'constant.keyword.clojure'
+  'string': 'constant.string.clojure'
+  'character': 'constant.character.clojure'
+
+  'vector': 'vector.collection.clojure'
+  'set': 'meta.set.collection.clojure'
+
+  'symbol': 'meta.symbol.clojure'
+  'symbol > threading_macro': 'threading-macro.clojure'
